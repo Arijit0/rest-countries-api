@@ -1,0 +1,23 @@
+<header class="container">
+    <mat-toolbar class="toolbar custom__padding">
+        <div class="title">Where in the world?</div>
+
+        <div class="flex-holder">
+          <div class="flex-item"
+          [@toggle]="isDarkMode ? 'hide' : 'show'">
+            <button mat-icon-button (click)="toggle()">
+              <mat-icon class="material-icons-outlined">dark_mode</mat-icon>
+              <span>Dark Mode</span>
+            </button>
+          </div>
+          <div class="flex-item"
+          [@toggle]="isDarkMode ? 'show' : 'hide'">
+            <button mat-icon-button (click)="toggle()">
+              <mat-icon class="material-icons-outlined">light_mode</mat-icon>
+              <span>Light Mode</span>
+            </button>
+          </div>
+        </div>
+    </mat-toolbar>
+</header>
+  

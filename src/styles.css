@@ -1,0 +1,78 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Css reset  */
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+html, body { 
+    height: 100%;
+}
+body { 
+    margin: 0; 
+    padding: 0;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+    /* color: var(--very-dark-blue-lightMode); */
+    /* color: var(--white-darkModeText-lightModeElements); */
+    
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Css reset  */
+
+/* Declaring Global Variables */
+:root {
+    --dark-blue: hsl(209, 23%, 22%);
+    --very-dark-blue-darkMode: hsl(207, 26%, 17%);
+    --very-dark-blue-lightMode: hsl(200, 15%, 8%);
+    --dark-gray-lightMode: hsl(0, 0%, 52%);
+    --very-light-gray: hsl(0, 0%, 98%);
+    --white-darkModeText-lightModeElements: hsl(0, 0%, 100%);
+
+    --shadow: rgb(0 0 0 / 10%) 0px 1px 3px 0px, rgb(0 0 0 / 6%) 0px 1px 2px 0px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    /* padding-right: 15px;
+    padding-left: 15px; */
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.custom__padding {
+    padding: 0px 80px !important;
+}
+
+@media (max-width: 992px){
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 768px){
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media (max-width: 576px){
+    .container {
+        max-width: 540px;
+    }
+
+    .custom__padding {
+        padding: 0px 20px !important;
+    }
+}

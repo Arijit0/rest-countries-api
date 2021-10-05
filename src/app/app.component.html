@@ -1,0 +1,18 @@
+<app-header></app-header>
+
+<div class="searchBar__filter__holder custom__padding container">
+    <div class="searchBar__holder">
+        <app-search-bar (searchTermFromSearchBar) = "getSearchTerm($event)"></app-search-bar>
+    </div>
+    <div class="filter__holder">
+        <app-filter (outputFromChild) = "receivefilterData($event)"></app-filter>
+    </div>
+</div>
+
+<div class="card__holder custom__padding container">
+    <ul>
+        <li *ngFor="let eachCountry of allCountriesArr" [routerLink]="['/detail']">
+            <app-card [eachCountry]="eachCountry"></app-card>
+        </li>
+    </ul>
+</div>

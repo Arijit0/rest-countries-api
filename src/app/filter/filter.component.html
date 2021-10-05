@@ -1,0 +1,22 @@
+
+   
+        <mat-card class="card filter__holder" (click)="dropDownToggle()">
+            <div class="filter p__top">Filter by Region</div>
+
+            <button mat-icon-button>
+                <mat-icon
+                [@rotatedState]="isShowing ? 'open' : 'closed'"
+                class="material-icons-outlined">expand_more</mat-icon>
+            </button>
+        </mat-card>
+
+        <mat-card class="card dropdown" [@openClose]="isShowing ? 'open' : 'closed'">
+            <mat-selection-list
+            [multiple]="false"
+            (selectionChange)="selectedRegion($event)">
+                <mat-list-option *ngFor="let eachregion of regions" [value]="eachregion">
+                  {{eachregion}}
+                </mat-list-option>
+            </mat-selection-list>
+        </mat-card>
+       

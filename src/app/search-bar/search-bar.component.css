@@ -1,0 +1,36 @@
+/* .searchBar-holder {
+    position: relative;
+} */
+
+mat-form-field {
+    position: relative;
+    width: 100%;
+    box-shadow: var(--shadow);
+    border-radius: 5px;
+    padding: 0px 0 0 80px;
+}
+
+/* input {
+    box-shadow: var(--shadow);
+    border-radius: 5px;
+    padding: 0px 0 0 80px;
+} */
+
+input::placeholder {
+    font-size: 12px;
+    opacity: 0.6;
+  }
+
+span {
+    position: absolute;
+    left: -50px;
+    transform: translate(0px, 3px);
+}
+
+/* :host .mat-form-field-label,.mat-focused .mat-form-field-label {
+        color: #FFF !important;
+    } */
+
+    ::ng-deep .mat-form-field-underline {
+        display: none;
+      }

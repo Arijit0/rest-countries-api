@@ -1,0 +1,22 @@
+<mat-card class="card">
+    <img mat-card-image [src]="__eachCountry.flags.svg" alt="Photo of a Shiba Inu">
+    <mat-card-content>
+      <h1>{{__eachCountry.name.common}}</h1>
+
+        <div class="holder">
+          <div class="title">Population: </div>
+          <div class="value">{{__eachCountry.population}}</div>
+        </div>
+        <div class="holder">
+          <div class="title">Region: </div>
+          <div class="value">{{__eachCountry.region}}</div>
+        </div>
+        <div class="holder">
+          <div class="title">Capital: </div>
+           <div *ngFor="let capitals of __eachCountry.capital" class="value">
+             {{capitals}}
+            </div> 
+        </div>
+
+    </mat-card-content>
+  </mat-card>

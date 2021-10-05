@@ -1,0 +1,27 @@
+
+.card {
+    width: 200px;
+}
+
+.filter__holder {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: var(--shadow);
+    padding-left: 25px;
+    padding-right: 15px;
+    padding-top: 7px;
+    height: 55px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.p__top {
+    padding-top: 12px;
+}
+
+.dropdown {
+    box-shadow: var(--shadow);
+    position: absolute;
+    z-index: 2;
+}
